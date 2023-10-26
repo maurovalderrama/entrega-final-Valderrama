@@ -1,0 +1,22 @@
+.caja{
+    @include flex(row, center, center);
+    @extend %estilos-colores;
+    font-size: 30px;
+    flex-wrap: wrap;
+    padding: 40px;    
+}
+.texto-servicios{
+    text-align: center;
+    width:500px;
+    height:400px;
+}
+.imagen-servicio {
+    width: 500px;
+    gap: 20px;
+    border: 2px solid $color-principal;
+    border-radius:  150px 0;
+    overflow: hidden;
+    box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+    -webkit-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+    -moz-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+    }

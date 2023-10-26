@@ -1,0 +1,33 @@
+html{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 62.5%;
+    flex-wrap: wrap;
+}
+h1{
+    color:$color-principal;  
+    font-size: 50px;  
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom:10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-shadow: 1px 1px 15px $color-principal;
+}
+h2{
+    color: $color-principal;
+    text-align: center;
+    padding: 40px;
+}
+h3{
+    font-size: 30px;
+    color: $color-principal;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+a:hover{
+    font-size: 25px;
+    text-shadow: 5px 5px 10px black;
+    
+}

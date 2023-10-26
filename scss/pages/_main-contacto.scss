@@ -1,0 +1,10 @@
+.texto-contacto{
+    padding: 100px;
+    color: $color-principal;
+    font-size: larger;
+    justify-content:space-between
+
+}
+.contacto-mapa{
+    @include flex(row, center, center);
+}

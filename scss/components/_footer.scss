@@ -1,0 +1,17 @@
+.iconos-footer{
+    background-color: $color-principal; 
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    
+    }
+    footer{
+        div{
+            img{
+                width: 60px;
+            }
+        }
+    }
+    .gradiente{
+        height: 10vh;
+        background-image: linear-gradient(to left, #1D1D20,rgb(47, 136, 255));
+    }

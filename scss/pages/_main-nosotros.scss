@@ -1,0 +1,20 @@
+.main-nosotros{
+    @include flex(row, center, center);
+    @extend %estilos-colores;
+    font-size: 25px;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+}
+.text-nosotros{
+    gap: 20px  ;
+    width: 100%;
+}
+.img-nosotros{
+    width: 100%;
+    border: 2px solid $color-principal;
+    border-radius: 200px 0;
+    box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+    -webkit-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+    -moz-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+}
