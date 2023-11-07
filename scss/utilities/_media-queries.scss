@@ -1,5 +1,6 @@
 /*Media queries*/
 @media screen and (max-width: 1023px ){ 
+    /*index*/
     main{
             .index{
                 @include flex(column, center, center);
@@ -9,32 +10,70 @@
                     margin: 50px;
                 
                 }
-                .imagen-index{
-                    border: 2px solid $color-principal;
-                    border-radius:  200px 0;
-                    overflow: hidden;
-                    box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
-                    -webkit-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
-                    -moz-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
-                
+                div{
+                    .imagen-index{
+                        margin-left: 100px;
+                        justify-self:center;
+                        border: 2px solid $color-principal;
+                        border-radius:  200px 0;
+                        overflow: hidden;
+                        box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+                        -webkit-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+                        -moz-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+                    
+                    } 
                 } 
         }
         
     }
+    /*nosotros*/
+    main{
+        .main-nosotros{
+            font-size: 20px;
+            
+        }
+        .text-nosotros{
+            padding-bottom: 20px  ;
+            width: 70%;
+        }
+        .img-nosotros{
+            width: 50%;
+            align-items: center;
+            border-radius: 100px 0;
+        }
+    }
     
-    }
-    .main-nosotros{
-        font-size: 20px;
-        
-    }
-    .text-nosotros{
-        padding-bottom: 20px  ;
-        width: 100%;
-    }
-    .img-nosotros{
-        width: 300px;
-        align-items: center;
-    }
+    /*servicios*/
+    main{
+        .caja{
+            @include flex(column, center, center);
+            width: 100%;
+            .texto-servicios{
+                @include flex(column, center, center);
+                font-size: 25px;
+                margin: 50px;
+                padding: 0;
+            }
+            .imagen-servicio{
+            width: 60%;
+            border: 2px solid $color-principal;
+            border-radius:  100px 0;
+            overflow: hidden;
+            box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+            -webkit-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+            -moz-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+                            }     
+                }
+        }
+        /*galeria*/
+        main{
+            .galeria .carpeta{
+                border-radius: 30px 0;
+                width: 50%;
+                            }
+            }    
+                                        }
+                                        
     @media screen and (max-width: 765px ){
         .header{
             nav{
@@ -63,12 +102,13 @@
             padding-top: 50px; 
             } 
             
-        .index{      
-                    display: flex;
-                    align-items: center;
-                    flex-direction:column;
-                    justify-content:center;
-                    flex-wrap: wrap;
+        main{
+            .index{      
+                display: flex;
+                align-items: center;
+                flex-direction:column;
+                justify-content:center;
+                div{
                     .texto-index{
                         color: $color-principal;
                         width: 250px;
@@ -78,30 +118,36 @@
                         align-items: center;
                     }  
                     .imagen-index{
-                        
+                        margin:40px;
                         align-content:center;
                         border: 2px solid $color-principal;
-                        border-radius:  200px 0;
+                        border-radius:  70px 0;
                         overflow: hidden;
                         box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
                         -webkit-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
                         -moz-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
-                        
                     } 
-                    
                 }
-        .contactanos-fijo{
-                    position: fixed;
-                    width: 80px;
-                    bottom: 20px;
-                    right: 20px;
+                
+                
+            }
+        }
+        /*nosotros*/
+        main{
+            .contactanos-fijo{
+                position: fixed;
+                width: 80px;
+                bottom: 20px;
+                right: 20px;
+            }
+        
+
+            .img-nosotros{
+                    width: 100%;
+                    border-radius: 50px 0;
                 }
 
-        .img-nosotros{
-                    width: 250px;
-                }
-
-        .main-nosotros{
+            .main-nosotros{
                     display: flex;
                     justify-content: center;
                     color: $color-principal;
@@ -110,10 +156,12 @@
                     flex-wrap: wrap;
                     
                 }
-
-        main{
+        }
+            
+/*contacto*/
+            main{
             @include flex(column, center, center);
-            .texto-contacto{
+                .texto-contacto{
                         color:$color-principal;
                         font-size: medium;
                         padding: 0%;
@@ -121,15 +169,15 @@
                         flex-wrap:wrap ;
                     
                     }
-            .contacto-mapa{
-                        width: 50%;
+                .contacto-mapa{
+                        width: 70%;
                         display: flex;
                         flex-direction: column;
                         justify-content:center;
                         margin:10px;
                     }
     
-            .mapa-contacto{
+                .mapa-contacto{
                     width: 280px;
                     }  
         }
@@ -137,21 +185,45 @@
                 
 
         
-
-        .texto-servicios{
-                    display: flex;
-                    font-size: 17px;
-                    flex-direction: column;
-                    text-align: center;
-                    align-items: center;
-                    width: 90%;
-                    padding-bottom: 30px;
+/*servicios*/
+            main{
+                .caja{
+                    .texto-servicios{
+                        display: flex;
+                        font-size: 20px;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: center;
+                        width: 100%;
+                        padding-bottom: 30px;
+                                    }
+                        .imagen-servicio{
+                        width:90%;
+                        gap: 20px;
+                        border: 2px solid $color-principal;
+                                border-radius:  200px, 0;
+                                overflow: hidden;
+                                box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+                                -webkit-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+                                -moz-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+                                    }
+            
                 }
                 
-        .imagen-servicio {
-                width:90%;
-                gap: 20px;
                 }
-            }
+                /*galería*/
+                .galeria{
+                    @include flex(column, center, space-between);
+                    
+
+                }
+                
+                .galeria .carpeta{
+                    border-radius: 30px 0;
+                    width: 50%;
+        }
+        }
+                
+        
 
 

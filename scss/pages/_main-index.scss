@@ -21,15 +21,18 @@ main{
             width: 70%;
             margin: 50px;
         }
-        .imagen-index{
-            margin: 40px;
-            width: 70%;
-            align-items: center;
-            border: 2px solid $color-principal;
-            border-radius:  200px 0;
-            overflow: hidden;
-            box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
-            -webkit-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
-            -moz-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);}
+        div{
+            .imagen-index{
+                margin: 40px;
+                width: 70%;
+                align-items: center;
+                border: 2px solid $color-principal;
+                border-radius:  200px 0;
+                overflow: hidden;
+                box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+                -webkit-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);
+                -moz-box-shadow: 19px 16px 39px -8px rgba(247,247,247,1);}
+        }
+        
     }
 }
